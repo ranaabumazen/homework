@@ -1,5 +1,5 @@
  const data = [{
-    job_title:"Senior Frontend Developer",
+    job_title:"Senior Frontend developer, Full time",
     type:"fulltime",
     location:"London",
     salary:3500,

@@ -142,11 +142,11 @@ const SearchAppbar = ({ dataList,handleSetJobsList }) => {
                 
                   <Box sx={{flexGrow:1}}/>
                   <StyledChip
-                                        key={dataList[0].job_title}
-                                        label={dataList[0].job_title}
-                                        size="small"
-                                        onDelete={()=>handleDeleteChip(dataList[0])}
-                                    />
+                    key={dataList[0].job_title}
+                    label={'UI/UX designing'}
+                    size="small"
+                    onDelete={()=>handleDeleteChip(dataList[0])}
+                   />
                 <StyledSearchFilterButton
                 sx={{fontSize:12}}
                     variant="outlined"

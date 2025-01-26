@@ -61,7 +61,7 @@ export  const CustomCheckbox = styled(Checkbox)({
     },
   }));
   export const StyledMainCard = styled(Card)({
-     width: '250',
+     width: '240px',
      padding:'1px',
      paddingBottom:'16px'
   });
@@ -108,10 +108,11 @@ export  const CustomCheckbox = styled(Checkbox)({
   export const StyledSelect = styled(Select)({
     color:"#b9b9b9", 
     fontSize:'14px',
-    width:'100%'
+    width:'100%',
+    borderRadius:'8px'
   });
   export const StyledMainSideBarCard = styled(Card)({
-    width: '250px',
+    width: '225px',
     padding:'8px',
     backgroundColor:"#dbeaff",
     borderRadius:'8px',

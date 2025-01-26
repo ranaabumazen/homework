@@ -44,7 +44,8 @@ export default function FilterationComponent({ jobsList }) {
         <OutlinedInput
           sx={{
             fontSize: '14px',
-            width: '100%'
+            width: '100%',
+            borderRadius:'8px'
           }}
           placeholder="Location"
           id="outlined-adornment-weight"

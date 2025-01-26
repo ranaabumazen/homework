@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Card, styled, Typography } from "@mui/material";
+import { Avatar, Box, Button, Card, IconButton, styled, Typography } from "@mui/material";
 import { red } from "@mui/material/colors";
 
 export const StyledTypography = styled(Typography)({
@@ -26,7 +26,9 @@ export const StyledTypeButton = styled(Button)({
     marginRight:'16px', 
     color: '#696969',
     fontSize:12, 
-    textTransform: 'capitalize'
+    textTransform: 'capitalize',
+    display:'flex',
+    alignItems:'center'
 });
 export const StyledCompanyTypography = styled(Typography)({
     textOverflow:'ellipsis',
@@ -38,4 +40,10 @@ export const StyledAvatar = styled(Avatar)({
     width:25,
     height:25,
     fontSize:'14px'
+});
+export const StyledIconButton = styled(IconButton)({
+    '&.MuiIconButton-root':{
+              padding:0
+    }
+           
 })

@@ -5,7 +5,7 @@ import FilterationComponent from "./FilterationComponent";
 import { StyledMainSideBarCard, StyledOutlineInput } from "./styles";
 const Sidebar = ({jobsList})=>{
 return(
-<Box sx={{margin:1}}>
+<Box sx={{margin:2,marginTop:1}}>
 <StyledMainSideBarCard>  
         <CardContent>
           <Typography gutterBottom variant="h6"

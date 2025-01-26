@@ -11,7 +11,7 @@ import VerifiedUserOutlinedIcon from '@mui/icons-material/VerifiedUserOutlined';
 import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
 import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
 import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
-import { StyledAvatar, StyledCard, StyledCompanyTypography, StyledSalaryTypography, StyledTypeButton, StyledTypography } from './styles';
+import { StyledAvatar, StyledCard, StyledCompanyTypography, StyledIconButton, StyledSalaryTypography, StyledTypeButton, StyledTypography } from './styles';
 import { StyledFlexBox } from '../../sharedStyles';
 
 
@@ -33,7 +33,8 @@ export default function CardComponent({ job }) {
         }
         action={
           <StyledTypeButton>
-            {type}
+           <Box sx={{width:'1px',height:'1px',backgroundColor:"#696969",borderRadius:'50%',padding:0.2,marginRight:0.5}}/>
+           {type}
           </StyledTypeButton>
         }
         title={<StyledCompanyTypography>
@@ -66,12 +67,12 @@ export default function CardComponent({ job }) {
             /Month
           </Typography>
         </StyledSalaryTypography>
-        <IconButton aria-label="add to favorites">
-          <VerifiedUserOutlinedIcon sx={{ ...iconStyle, width: 24, height: 24 }} />
-        </IconButton>
-        <IconButton aria-label="share">
+        <StyledIconButton aria-label="add to favorites">
+          <VerifiedUserOutlinedIcon sx={{ ...iconStyle, width: 20, height: 20 }} />
+        </StyledIconButton>
+        <StyledIconButton aria-label="share">
           <BookmarkBorderOutlinedIcon sx={{ ...iconStyle, width: 24, height: 24 }} />
-        </IconButton>
+        </StyledIconButton>
       </CardActions>
     </StyledCard>
   );

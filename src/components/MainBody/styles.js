@@ -12,8 +12,16 @@ export const StyledIconButton = styled(IconButton)({
 export const StyledPagination = styled(Pagination)({
     marginTop:'16px',
     '& .MuiPaginationItem-root.Mui-selected':{
-    backgroundColor:'#ffc8c9'
-   },'& .MuiPaginationItem-previousNext':{
+    backgroundColor:'#ffc8c9',
+    borderRadius:'8px'
+   },
+   '& .MuiPaginationItem-root[aria-label="Go to previous page"]':{
+    marginRight:'24px'
+   },
+   '& .MuiPaginationItem-root[aria-label="Go to next page"]':{
+    marginLeft:'24px',
+   },
+   '& .MuiPaginationItem-previousNext':{
     borderRadius:'50%',
     color:'white',
     backgroundColor:'rgba(0, 0, 0, 0.12)'

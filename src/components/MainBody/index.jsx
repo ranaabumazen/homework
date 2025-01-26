@@ -57,7 +57,8 @@ const MainBody = ({ jobsList, jobsPerPage, page, handlePageChange }) => {
         page={page}
         onChange={handlePageChange}
         count={Math.ceil(jobsList.length / 8)}
-        shape="rounded" />
+        shape="rounded"
+      />
     </StyledVerticalFlexBox>);
 
 }
